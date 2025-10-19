@@ -1,358 +1,131 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Soluciones Digitales Manzanillo </title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="icons/youtube-logo.svg">
-      </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="icons/search.svg">
-          <div class="tooltip">Search</div>
-        </button>
-        <!-- Put position absolute inside position relative -->
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
-      </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="icons/upload.svg">
-          <div class="tooltip">Create</div>
-        </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-          <div class="tooltip">YouTube Apps</div>
-        </div>
-        <div class="notifications-icon-container">
-          <img class="notifications-icon" src="icons/notifications.svg">
-          <div class="notifications-count">3</div>
-          <div class="tooltip">Notifications</div>
-        </div>
-        <img class="current-user-picture" src="channel-pictures/my-channel.jpeg">
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kit de Soluciones Digitales — Descargas</title>
+  <meta name="description" content="Bienvenidos a mi página para soluciones digitales. Descarga software de soporte remoto y herramientas recomendadas." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#071029 0%, #081428 60%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+    .container{max-width:980px;margin:36px auto;padding:20px;}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{
+      width:76px;height:76px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#7c3aed);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#042028;
+      box-shadow:0 6px 20px rgba(2,6,23,0.6);font-size:18px;
+    }
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:var(--muted);margin:8px 0 20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{
+      background:linear-gradient(180deg,var(--card), rgba(8,14,24,0.75));
+      border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 8px 24px rgba(3,6,16,0.6);
+    }
+    .card h3{margin:0 0 6px;font-size:1.05rem}
+    .card p{margin:0 0 12px;color:var(--muted);font-size:0.95rem}
+    .btn{
+      display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border-radius:10px;
+      background:linear-gradient(90deg,var(--accent),#7c3aed);
+      color:#022b2f;font-weight:700;border:none;text-decoration:none;cursor:pointer;
+      transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .btn:active{transform:translateY(1px)}
+    .small{font-size:0.9rem;color:var(--muted)}
+    footer{margin-top:26px;padding:16px;border-radius:12px;background:var(--glass);color:var(--muted)}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    @media (max-width:520px){
+      header{flex-direction:column;align-items:flex-start}
+      .logo{width:60px;height:60px}
+    }
+    /* accessibility focus */
+    a.btn:focus { outline:3px solid rgba(6,182,212,0.18); box-shadow:0 8px 16px rgba(6,182,212,0.12); }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <div class="logo" aria-hidden="true">KD</div>
+      <div>
+        <h1>Bienvenidos a mi página para soluciones digitales</h1>
+        <p class="lead">Descarga las herramientas recomendadas para soporte remoto y automatización. Selecciona la que necesites y sigue las instrucciones del fabricante.</p>
       </div>
     </header>
 
-    <nav class="sidebar">
-      <div class="sidebar-link">
-        <img src="icons/home.svg">
-        <div>Home</div>
+    <section aria-labelledby="herramientas" style="margin-top:18px;">
+      <h2 id="herramientas" style="font-size:1.15rem;margin:0 0 12px">Herramientas</h2>
+
+      <div class="grid" role="list">
+        <!-- TeamViewer -->
+        <article class="card" role="listitem" aria-labelledby="tv-title">
+          <h3 id="tv-title">TeamViewer</h3>
+          <p>Software para control remoto, soporte y reuniones en línea. Gratis para uso personal. Sigue las instrucciones oficiales en su página de descarga.</p>
+          <a class="btn" href="https://www.teamviewer.com/en-us/download/windows/" target="_blank" rel="noopener noreferrer">
+            Descargar TeamViewer
+          </a>
+          <div style="margin-top:10px" class="small">Plataformas: Windows, macOS, Linux, iOS, Android</div>
+        </article>
+
+        <!-- AnyDesk -->
+        <article class="card" role="listitem" aria-labelledby="ad-title">
+          <h3 id="ad-title">AnyDesk</h3>
+          <p>Cliente de acceso remoto ligero y rápido, ideal para soporte técnico y acceso a escritorio remoto.</p>
+          <a class="btn" href="https://anydesk.com/en/downloads/windows" target="_blank" rel="noopener noreferrer">
+            Descargar AnyDesk
+          </a>
+          <div style="margin-top:10px" class="small">Plataformas: Windows, macOS, Linux, iOS, Android</div>
+        </article>
+
+        <!-- RustDesk -->
+        <article class="card" role="listitem" aria-labelledby="rd-title">
+          <h3 id="rd-title">RustDesk</h3>
+          <p>Alternativa open-source a TeamViewer/AnyDesk, con opción de autoalojar el servidor para mayor control de datos.</p>
+          <a class="btn" href="https://rustdesk.com/" target="_blank" rel="noopener noreferrer">
+            Ir a RustDesk (Descargas)
+          </a>
+          <div style="margin-top:10px" class="small">Open-source — ideal si buscas self-hosting.</div>
+        </article>
+
+        <!-- Rundeck -->
+        <article class="card" role="listitem" aria-labelledby="rk-title">
+          <h3 id="rk-title">Rundeck</h3>
+          <p>Herramienta para runbooks y automatización/operaciones (si buscabas Rundeck / herramienta de operaciones, aquí la tienes).</p>
+          <a class="btn" href="https://www.rundeck.com/downloads" target="_blank" rel="noopener noreferrer">
+            Descargar/Ver Rundeck
+          </a>
+          <div style="margin-top:10px" class="small">Útil para automatizar tareas en infraestructura y despliegues.</div>
+        </article>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/explore.svg">
-        <div>Explore</div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong>Aviso:</strong>
+          <span class="small">Descarga siempre desde los enlaces oficiales. No distribuyas versiones no oficiales o modificadas. Lee las condiciones y requisitos del sistema antes de instalar.</span>
+        </div>
+        <div class="meta">
+          <span class="small">Página generada por: Tu equipo de soluciones digitales</span>
+        </div>
       </div>
-      <div class="sidebar-link">
-        <img src="icons/subscriptions.svg">
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/originals.svg">
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/youtube-music.svg">
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/library.svg">
-        <div>Library</div>
-      </div>
-    </nav>
-
-    <main>
-      <section class="video-grid">
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-            <div class="video-time">14:20</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                Marques Brownlee
-              </p>
-              <p class="video-stats">
-                3.4M views &#183; 6 months ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-            <div class="video-time">8:22</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                Markiplier
-              </p>
-              <p class="video-stats">
-                19M views &#183; 4 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
-            <div class="video-time">9:13</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                SSSniperWolf
-              </p>
-              <p class="video-stats">
-                12M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
-            <div class="video-time">22:09</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                Veritasium
-              </p>
-              <p class="video-stats">
-                18M views &#183; 4 months ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
-            <div class="video-time">11:17</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                CS Dojo
-              </p>
-              <p class="video-stats">
-                519K views &#183; 5 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
-            <div class="video-time">19:59</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                MrBeast
-              </p>
-              <p class="video-stats">
-                141M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-7.webp">
-            <div class="video-time">10:13</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                RealLifeLore
-              </p>
-              <p class="video-stats">
-                6.6M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-8.webp">
-            <div class="video-time">7:12</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-8.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                Tech Vision
-              </p>
-              <p class="video-stats">
-                3.7M views &#183; 10 months ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-9.webp">
-            <div class="video-time">13:17</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-9.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                ThenX
-              </p>
-              <p class="video-stats">
-                20M views &#183; 3 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-10.webp">
-            <div class="video-time">7:53</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-10.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                Business Insider
-              </p>
-              <p class="video-stats">
-                14M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-11.webp">
-            <div class="video-time">4:10</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-11.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                Destination Tips
-              </p>
-              <p class="video-stats">
-                3M views &#183; 1 year ago
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-12.webp">
-            <div class="video-time">4:51</div>
-          </div>
-          <div class="video-info-grid">
-            <div class="channel-picture">
-              <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
-            </div>
-            <div class="video-info">
-              <p class="video-title">
-                Obtener Teamviewer Para Asistencia !
-              </p>
-              <p class="video-author">
-                TED-Ed
-              </p>
-              <p class="video-stats">
-                12M views &#183; 5 years ago
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+    </footer>
+  </main>
+</body>
 </html>
