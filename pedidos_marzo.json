@@ -1,178 +1,826 @@
 [
     {
-        "pedimento": "6000026",
-        "referencia": "MZO852B-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 249165.0,
-        "total_efectivo": 53815.0
-    },
-    {
-        "pedimento": "6000103",
-        "referencia": "MZO849B-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 101637.0,
-        "total_efectivo": 38656.0
-    },
-    {
-        "pedimento": "6000670",
-        "referencia": "MZO560-26",
-        "tipo": "",
-        "fecha": "2026-03-01 00:00:00",
-        "valor_comercial": 7792858.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000706",
-        "referencia": "MZO589-26",
-        "tipo": "",
-        "fecha": "2026-03-07 00:00:00",
-        "valor_comercial": 583644.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000718",
-        "referencia": "MZO601-26",
-        "tipo": "",
-        "fecha": "2026-03-03 00:00:00",
-        "valor_comercial": 3036603.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000812",
-        "referencia": "MZO562A-26",
-        "tipo": "",
-        "fecha": "2026-03-07 00:00:00",
-        "valor_comercial": 27384.0,
-        "total_efectivo": 5559.0
-    },
-    {
-        "pedimento": "6000884",
-        "referencia": "MZO734-26",
-        "tipo": "",
-        "fecha": "2026-03-09 00:00:00",
-        "valor_comercial": 1392912.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000886",
-        "referencia": "MZO736-26",
-        "tipo": "",
-        "fecha": "2026-03-01 00:00:00",
-        "valor_comercial": 3896429.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000889",
-        "referencia": "MZO739-26",
-        "tipo": "",
-        "fecha": "2026-03-09 00:00:00",
-        "valor_comercial": 1392912.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000890",
-        "referencia": "MZO740-26",
-        "tipo": "",
-        "fecha": "2026-03-09 00:00:00",
-        "valor_comercial": 2191970.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000894",
-        "referencia": "MZO744-26",
-        "tipo": "",
-        "fecha": "2026-03-04 00:00:00",
-        "valor_comercial": 6601132.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000943",
-        "referencia": "MZO787-26",
-        "tipo": "",
-        "fecha": "2026-03-06 00:00:00",
-        "valor_comercial": 1854150.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6000963",
-        "referencia": "MZO804-26",
-        "tipo": "",
-        "fecha": "2026-03-03 00:00:00",
-        "valor_comercial": 2440704.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001004",
-        "referencia": "MZO841-26",
-        "tipo": "",
-        "fecha": "2026-03-03 00:00:00",
-        "valor_comercial": 687178.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001012",
-        "referencia": "MZO849-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 8912118.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001014",
-        "referencia": "MZO850-26",
-        "tipo": "",
-        "fecha": "2026-03-06 00:00:00",
-        "valor_comercial": 1927045.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001016",
-        "referencia": "MZO852-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 3842044.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001017",
-        "referencia": "MZO852A-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 10381547.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001018",
-        "referencia": "MZO853-26",
-        "tipo": "",
-        "fecha": "2026-03-03 00:00:00",
-        "valor_comercial": 1280206.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001059",
-        "referencia": "MZO889-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 3516413.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001060",
-        "referencia": "MZO890-26",
-        "tipo": "",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 4625156.0,
-        "total_efectivo": 845.0
-    },
-    {
-        "pedimento": "6001155",
-        "referencia": "RMZO849-26",
+        "pedimento": "6000101",
+        "referencia": "RMZO430-26",
         "tipo": "R1",
-        "fecha": "2026-03-05 00:00:00",
-        "valor_comercial": 8912118.0,
+        "fecha": "2026-02-04 00:00:00",
+        "valor_comercial": 633067.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000102",
+        "referencia": "RMZO743-26",
+        "tipo": "R1",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 4763453.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000344",
+        "referencia": "MZO294-26",
+        "tipo": "",
+        "fecha": "2026-02-08 00:00:00",
+        "valor_comercial": 3373597.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000345",
+        "referencia": "MZO295-26",
+        "tipo": "",
+        "fecha": "2026-02-08 00:00:00",
+        "valor_comercial": 3694635.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000463",
+        "referencia": "MZO385-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 1798329.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000468",
+        "referencia": "MZO390-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 3117320.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000472",
+        "referencia": "MZO394-26",
+        "tipo": "",
+        "fecha": "2026-02-09 00:00:00",
+        "valor_comercial": 1757803.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000473",
+        "referencia": "MZO395-26",
+        "tipo": "",
+        "fecha": "2026-02-09 00:00:00",
+        "valor_comercial": 1079245.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000475",
+        "referencia": "MZO397-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 59962.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000518",
+        "referencia": "MZO430-26",
+        "tipo": "",
+        "fecha": "2026-02-04 00:00:00",
+        "valor_comercial": 633067.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000520",
+        "referencia": "MZO432-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 931531.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000525",
+        "referencia": "MZO437-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 6961375.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000528",
+        "referencia": "MZO440-26",
+        "tipo": "",
+        "fecha": "2026-02-14 00:00:00",
+        "valor_comercial": 5891780.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000529",
+        "referencia": "MZO441-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 153513.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000531",
+        "referencia": "MZO443-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 1900111.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000533",
+        "referencia": "MZO445-26",
+        "tipo": "",
+        "fecha": "2026-02-06 00:00:00",
+        "valor_comercial": 3816607.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000534",
+        "referencia": "MZO446-26",
+        "tipo": "",
+        "fecha": "2026-02-07 00:00:00",
+        "valor_comercial": 536663.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000535",
+        "referencia": "MZO447-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 931531.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000536",
+        "referencia": "MZO448-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 420771.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000620",
+        "referencia": "MZO517-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 420771.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000621",
+        "referencia": "MZO518-26",
+        "tipo": "",
+        "fecha": "2026-02-03 00:00:00",
+        "valor_comercial": 610435.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000624",
+        "referencia": "MZO521-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 2981172.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000625",
+        "referencia": "MZO522-26",
+        "tipo": "",
+        "fecha": "2026-02-16 00:00:00",
+        "valor_comercial": 2073008.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000626",
+        "referencia": "MZO523-26",
+        "tipo": "",
+        "fecha": "2026-02-10 00:00:00",
+        "valor_comercial": 1072537.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000627",
+        "referencia": "MZO524-26",
+        "tipo": "",
+        "fecha": "2026-02-04 00:00:00",
+        "valor_comercial": 3971433.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000628",
+        "referencia": "MZO525-26",
+        "tipo": "",
+        "fecha": "2026-02-08 00:00:00",
+        "valor_comercial": 3988849.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000629",
+        "referencia": "MZO526-26",
+        "tipo": "",
+        "fecha": "2026-02-15 00:00:00",
+        "valor_comercial": 2216939.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000630",
+        "referencia": "MZO527-26",
+        "tipo": "",
+        "fecha": "2026-02-15 00:00:00",
+        "valor_comercial": 3605018.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000631",
+        "referencia": "MZO528-26",
+        "tipo": "",
+        "fecha": "2026-02-04 00:00:00",
+        "valor_comercial": 4745339.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000632",
+        "referencia": "MZO529-26",
+        "tipo": "",
+        "fecha": "2026-02-04 00:00:00",
+        "valor_comercial": 5883850.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000633",
+        "referencia": "MZO530-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 512748.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000634",
+        "referencia": "MZO531-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 1289780.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000658",
+        "referencia": "MZO548-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 4557799.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000659",
+        "referencia": "MZO549-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 548675.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000660",
+        "referencia": "MZO550-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 2693925.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000661",
+        "referencia": "MZO551-26",
+        "tipo": "",
+        "fecha": "2026-02-16 00:00:00",
+        "valor_comercial": 7488718.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000662",
+        "referencia": "MZO552-26",
+        "tipo": "",
+        "fecha": "2026-02-21 00:00:00",
+        "valor_comercial": 2888082.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000663",
+        "referencia": "MZO553-26",
+        "tipo": "",
+        "fecha": "2026-02-21 00:00:00",
+        "valor_comercial": 3906043.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000664",
+        "referencia": "MZO554-26",
+        "tipo": "",
+        "fecha": "2026-02-07 00:00:00",
+        "valor_comercial": 1055357.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000665",
+        "referencia": "MZO555-26",
+        "tipo": "",
+        "fecha": "2026-02-07 00:00:00",
+        "valor_comercial": 1005800.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000666",
+        "referencia": "MZO556-26",
+        "tipo": "",
+        "fecha": "2026-02-07 00:00:00",
+        "valor_comercial": 1166925.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000667",
+        "referencia": "MZO557-26",
+        "tipo": "",
+        "fecha": "2026-02-21 00:00:00",
+        "valor_comercial": 3899522.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000668",
+        "referencia": "MZO558-26",
+        "tipo": "",
+        "fecha": "2026-02-07 00:00:00",
+        "valor_comercial": 8816798.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000669",
+        "referencia": "MZO559-26",
+        "tipo": "",
+        "fecha": "2026-02-22 00:00:00",
+        "valor_comercial": 6411716.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000671",
+        "referencia": "MZO561-26",
+        "tipo": "",
+        "fecha": "2026-02-09 00:00:00",
+        "valor_comercial": 201135.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000672",
+        "referencia": "MZO562-26",
+        "tipo": "",
+        "fecha": "2026-02-07 00:00:00",
+        "valor_comercial": 555225.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000673",
+        "referencia": "MZO563-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 1583128.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000674",
+        "referencia": "MZO563A-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 5392351.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000675",
+        "referencia": "MZO563B-26",
+        "tipo": "",
+        "fecha": "2026-02-05 00:00:00",
+        "valor_comercial": 3791898.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000707",
+        "referencia": "MZO590-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 1321367.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000708",
+        "referencia": "MZO591-26",
+        "tipo": "",
+        "fecha": "2026-02-13 00:00:00",
+        "valor_comercial": 649805.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000709",
+        "referencia": "MZO592-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 2476828.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000710",
+        "referencia": "MZO593-26",
+        "tipo": "",
+        "fecha": "2026-02-22 00:00:00",
+        "valor_comercial": 2141502.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000712",
+        "referencia": "MZO595-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 420686.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000713",
+        "referencia": "MZO596-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 127113.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000714",
+        "referencia": "MZO597-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 136158.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000715",
+        "referencia": "MZO598-26",
+        "tipo": "",
+        "fecha": "2026-02-15 00:00:00",
+        "valor_comercial": 7376104.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000716",
+        "referencia": "MZO599-26",
+        "tipo": "",
+        "fecha": "2026-02-17 00:00:00",
+        "valor_comercial": 1460136.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000719",
+        "referencia": "MZO602-26",
+        "tipo": "",
+        "fecha": "2026-02-17 00:00:00",
+        "valor_comercial": 1005414.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000720",
+        "referencia": "MZO603-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 1070751.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000721",
+        "referencia": "MZO604-26",
+        "tipo": "",
+        "fecha": "2026-02-18 00:00:00",
+        "valor_comercial": 7500877.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000722",
+        "referencia": "MZO605-26",
+        "tipo": "",
+        "fecha": "2026-02-04 00:00:00",
+        "valor_comercial": 2173307.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000723",
+        "referencia": "MZO606-26",
+        "tipo": "",
+        "fecha": "2026-02-13 00:00:00",
+        "valor_comercial": 4748421.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000729",
+        "referencia": "MZO611-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 5779967.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000730",
+        "referencia": "MZO611A-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 7225374.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000743",
+        "referencia": "MZO441A-26",
+        "tipo": "",
+        "fecha": "2026-02-02 00:00:00",
+        "valor_comercial": 49848.0,
+        "total_efectivo": 9524.0
+    },
+    {
+        "pedimento": "6000763",
+        "referencia": "MZO611B-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 54511.0,
+        "total_efectivo": 24821.0
+    },
+    {
+        "pedimento": "6000774",
+        "referencia": "MZO647-26",
+        "tipo": "",
+        "fecha": "2026-02-14 00:00:00",
+        "valor_comercial": 4297212.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000775",
+        "referencia": "MZO648-26",
+        "tipo": "",
+        "fecha": "2026-02-14 00:00:00",
+        "valor_comercial": 3719225.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000776",
+        "referencia": "MZO649-26",
+        "tipo": "",
+        "fecha": "2026-02-15 00:00:00",
+        "valor_comercial": 879311.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000777",
+        "referencia": "MZO650-26",
+        "tipo": "",
+        "fecha": "2026-02-15 00:00:00",
+        "valor_comercial": 570582.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000778",
+        "referencia": "MZO651-26",
+        "tipo": "",
+        "fecha": "2026-02-16 00:00:00",
+        "valor_comercial": 362695.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000779",
+        "referencia": "MZO652-26",
+        "tipo": "",
+        "fecha": "2026-02-16 00:00:00",
+        "valor_comercial": 288012.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000780",
+        "referencia": "MZO653-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 1859772.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000781",
+        "referencia": "MZO654-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 1991543.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000782",
+        "referencia": "MZO655-26",
+        "tipo": "",
+        "fecha": "2026-02-18 00:00:00",
+        "valor_comercial": 2960980.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000783",
+        "referencia": "MZO656-26",
+        "tipo": "",
+        "fecha": "2026-02-25 00:00:00",
+        "valor_comercial": 2134830.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000784",
+        "referencia": "MZO657-26",
+        "tipo": "",
+        "fecha": "2026-02-22 00:00:00",
+        "valor_comercial": 1419519.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000785",
+        "referencia": "MZO658-26",
+        "tipo": "",
+        "fecha": "2026-02-21 00:00:00",
+        "valor_comercial": 3760024.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000786",
+        "referencia": "MZO659-26",
+        "tipo": "",
+        "fecha": "2026-02-18 00:00:00",
+        "valor_comercial": 896493.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000787",
+        "referencia": "MZO660-26",
+        "tipo": "",
+        "fecha": "2026-02-18 00:00:00",
+        "valor_comercial": 4736505.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000789",
+        "referencia": "MZO662-26",
+        "tipo": "",
+        "fecha": "2026-02-21 00:00:00",
+        "valor_comercial": 3340377.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000790",
+        "referencia": "MZO663-26",
+        "tipo": "",
+        "fecha": "2026-02-21 00:00:00",
+        "valor_comercial": 4415788.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000887",
+        "referencia": "MZO737-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 1903303.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000888",
+        "referencia": "MZO738-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 688285.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000892",
+        "referencia": "MZO742-26",
+        "tipo": "",
+        "fecha": "2026-02-26 00:00:00",
+        "valor_comercial": 1471240.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000893",
+        "referencia": "MZO743-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 4763453.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000895",
+        "referencia": "MZO745-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 463146.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000896",
+        "referencia": "MZO746-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 2197174.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000897",
+        "referencia": "MZO747-26",
+        "tipo": "",
+        "fecha": "2026-02-28 00:00:00",
+        "valor_comercial": 4475416.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000898",
+        "referencia": "MZO748-26",
+        "tipo": "",
+        "fecha": "2026-02-12 00:00:00",
+        "valor_comercial": 1388555.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000899",
+        "referencia": "MZO749-26",
+        "tipo": "",
+        "fecha": "2026-02-13 00:00:00",
+        "valor_comercial": 777921.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000900",
+        "referencia": "MZO750-26",
+        "tipo": "",
+        "fecha": "2026-02-25 00:00:00",
+        "valor_comercial": 964850.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000901",
+        "referencia": "MZO751-26",
+        "tipo": "",
+        "fecha": "2026-02-28 00:00:00",
+        "valor_comercial": 2140151.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000902",
+        "referencia": "MZO752-26",
+        "tipo": "",
+        "fecha": "2026-02-28 00:00:00",
+        "valor_comercial": 2140151.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000903",
+        "referencia": "MZO753-26",
+        "tipo": "",
+        "fecha": "2026-02-28 00:00:00",
+        "valor_comercial": 767889.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000940",
+        "referencia": "MZO784-26",
+        "tipo": "",
+        "fecha": "2026-02-28 00:00:00",
+        "valor_comercial": 1252397.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000941",
+        "referencia": "MZO785-26",
+        "tipo": "",
+        "fecha": "2026-02-25 00:00:00",
+        "valor_comercial": 1252665.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000942",
+        "referencia": "MZO786-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 1690796.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000966",
+        "referencia": "MZO807-26",
+        "tipo": "",
+        "fecha": "2026-02-28 00:00:00",
+        "valor_comercial": 717576.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000969",
+        "referencia": "MZO810-26",
+        "tipo": "",
+        "fecha": "2026-02-23 00:00:00",
+        "valor_comercial": 127397.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6000971",
+        "referencia": "MZO812-26",
+        "tipo": "",
+        "fecha": "2026-02-27 00:00:00",
+        "valor_comercial": 3712738.0,
+        "total_efectivo": 845.0
+    },
+    {
+        "pedimento": "6001135",
+        "referencia": "RMZO657-26",
+        "tipo": "R1",
+        "fecha": "2026-02-22 00:00:00",
+        "valor_comercial": 1419519.0,
         "total_efectivo": 845.0
     }
 ]
