@@ -5,7 +5,69 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kit de Soluciones Digitales — Descargas</title>
   <meta name="description" content="Welcome a mi página SOLUCIONES DIGITALES. Descarga software de soporte remoto y herramientas recomendadas." />
+
+  <div class="contenedor-vidrio">
+    <div class="tarjeta-vidrio">
+        <h3>Desarrollo de Software</h3>
+        <p>Creamos soluciones a medida con las últimas tecnologías del mercado.</p>
+        <a href="#" class="boton-vidrio">Saber más</a>
+    </div>
+
+    <div class="tarjeta-vidrio">
+        <h3>Bases de Datos</h3>
+        <p>Optimización y limpieza de Firebird para un rendimiento máximo.</p>
+        <a href="#" class="boton-vidrio">Saber más</a>
+    </div>
+</div>
+
   <style>
+/* Fondo de la página para que resalte el vidrio */
+body {
+    background: linear-gradient(135deg, #1e3a8a 0%, #581c87 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contenedor-vidrio {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-vidrio {
+    /* AQUÍ ESTÁ EL TRUCO DEL VIDRIO */
+    background: rgba(255, 255, 255, 0.1); /* Color blanco con mucha transparencia */
+    backdrop-filter: blur(10px);          /* Esto crea el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde finito para el reflejo */
+    border-radius: 20px;
+    padding: 30px;
+    width: 250px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;      /* Para que se mueva suave al pasar el mouse */
+}
+
+/* Efecto cuando pasas el ratón por encima */
+.tarjeta-vidrio:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.boton-vidrio {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
     :root{
       --bg:#0f1724;
       --card:#0b1220;
@@ -111,7 +173,7 @@
           <span class="small">Descarga siempre desde los enlaces oficiales. No distribuyas versiones no oficiales o modificadas. Lee las condiciones y requisitos del sistema antes de instalar.</span>
         </div>
         <div class="meta">
-          <span class="small">Página Desarrollada por Luis Giron Plazola by Soluciones digitales</span>
+          <span class="small">Página Desarrollada por Luis Giron Plazola by Soluciones digitales 2026</span>
         </div>
       </div>
     </footer>
