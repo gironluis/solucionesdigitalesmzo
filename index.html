@@ -84,6 +84,23 @@ body {
     transition: transform 0.3s ease;      /* Para que se mueva suave al pasar el mouse */
 }
 
+/* Este es el 'foco' que seguirá a tu mouse */
+.tarjeta-vidrio::before {
+    content: ''; /* Obligatorio para que aparezca el elemento */
+    position: absolute;
+    /* Estas variables las controla el JavaScript */
+    top: var(--y, -1000px); 
+    left: var(--x, -1000px);
+    width: 350px;
+    height: 350px;
+    /* Aquí definimos que la luz sea un círculo blanco suave */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Para que puedas hacer clic en el botón sin problemas */
+}
+
+
+
 /* Efecto cuando pasas el ratón por encima */
 .tarjeta-vidrio:hover {
     transform: translateY(-10px);
