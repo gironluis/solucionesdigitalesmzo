@@ -6,13 +6,35 @@
   <title>Kit de Soluciones Digitales — Descargas</title>
   <meta name="description" content="Welcome a mi página SOLUCIONES DIGITALES. Descarga software de soporte remoto y herramientas recomendadas." />
 
-
-
-
-
-
-
   <style>
+
+#contenedor-pedimentos {
+    display: grid;
+    /* Esto crea columnas automáticamente de al menos 300px */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    justify-content: center;
+}
+
+.tarjeta-vidrio {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-vidrio:hover {
+    transform: translateY(-5px); /* Se levanta al pasar el mouse */
+}
+
+
 .menu-navegacion {
   position:fixed;
     top:0;
@@ -176,6 +198,7 @@ body {
 
 
 <body>
+
 <script>
     document.querySelectorAll('.tarjeta-vidrio').forEach(tarjeta => {
         tarjeta.onmousemove = (e) => {
@@ -205,6 +228,11 @@ body {
         <p class="lead">Descarga las herramientas recomendadas para soporte remoto y automatización. Selecciona la que necesites y sigue las instrucciones del fabricante.</p>
       </div>
     </header>
+
+<div id="contenedor-pedimentos" class="contenedor-vidrio">
+
+</div>
+
 
   <div class="contenedor-vidrio">
     <div class="tarjeta-vidrio">
@@ -267,5 +295,34 @@ body {
       </div>
     </footer>
   </main>
+  
+
+  
+
+<script>
+// 1. Le decimos que vaya a buscar el archivo que creó Python
+fetch('pedidos_marzo.json')
+    .then(response => response.json()) // Lo convierte a formato de lista
+    .then(data => {
+        const contenedor = document.getElementById('contenedor-pedimentos');
+        contenedor.innerHTML = ''; // Limpiamos por si acaso
+
+        // 2. Por cada uno de los 22 pedimentos, creamos una tarjeta
+        data.forEach(pedido => {
+            contenedor.innerHTML += `
+                <div class="tarjeta-vidrio">
+                    <div class="badge">PEDIMENTO</div>
+                    <h3>${pedido.pedimento}</h3>
+                    <p><strong>Referencia:</strong> ${pedido.referencia}</p>
+                    <p><strong>Tipo:</strong> ${pedido.tipo}</p>
+                    <p><strong>Total:</strong> $${pedido.total_efectivo.toLocaleString()}</p>
+                    <a href="#" class="boton-vidrio">Ver Detalles</a>
+                </div>
+            `;
+        });
+    })
+    .catch(error => console.error('Híjole, no pude leer el JSON:', error));
+</script>
+
 </body>
 </html>
