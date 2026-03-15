@@ -6,6 +6,12 @@
   <title>Kit de Soluciones Digitales — Descargas</title>
   <meta name="description" content="Welcome a mi página SOLUCIONES DIGITALES. Descarga software de soporte remoto y herramientas recomendadas." />
 
+
+
+
+
+
+
   <style>
 .menu-navegacion {
   position:fixed;
@@ -63,8 +69,10 @@ body {
 }
 
 .tarjeta-vidrio {
-    /* AQUÍ ESTÁ EL TRUCO DEL VIDRIO */
-    background: rgba(255, 255, 255, 0.1); /* Color blanco con mucha transparencia */
+    position:relative;
+    overflow:hidden;  
+  /* AQUÍ ESTÁ EL TRUCO DEL VIDRIO */
+      background: rgba(255, 255, 255, 0.1); /* Color blanco con mucha transparencia */
     backdrop-filter: blur(10px);          /* Esto crea el efecto de desenfoque */
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2); /* Borde finito para el reflejo */
@@ -148,10 +156,23 @@ body {
     a.btn:focus { outline:3px solid rgba(6,182,212,0.18); box-shadow:0 8px 16px rgba(6,182,212,0.12); }
   </style>
 </head>
+
+
 <body>
+<script>
+    document.querySelectorAll('.tarjeta-vidrio').forEach(tarjeta => {
+        tarjeta.onmousemove = (e) => {
+            const x = e.pageX - tarjeta.offsetLeft;
+            const y = e.pageY - tarjeta.offsetTop;
+            tarjeta.style.setProperty('--x', x + 'px');
+            tarjeta.style.setProperty('--y', y + 'px');
+        };
+    });
+</script>
+
 
 <nav class="menu-navegacion">
-<div class="logo" aria-hidden="true">Soluciones</div>
+<div class="logo" aria-hidden="true">LAGP</div>
 <ul class="enlaces">
   <li><a href="#Servicios">Servicios</a></li>
   <li><a href="#Herramientas">Herramientas</a></li>
