@@ -7,6 +7,43 @@
   <meta name="description" content="Welcome a mi página SOLUCIONES DIGITALES. Descarga software de soporte remoto y herramientas recomendadas." />
 
   <style>
+.menu-navegacion {
+  position:fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index:1000;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.logo{
+color:white;
+font-weight: bold;
+font-size: 1.2em;
+letter-spacing: 1px;
+
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #06b6d4;
+}
+
 /* Fondo de la página para que resalte el vidrio */
 body {
     background: linear-gradient(135deg, #1e3a8a 0%, #581c87 100%);
@@ -111,6 +148,17 @@ body {
   </style>
 </head>
 <body>
+
+<nav class="menu-navegacion">
+<div class="logo" aria-hidden="true">Soluciones Digitales</div>
+<ul class="enlaces">
+  <li><a href="#servicios">Servicios</a></li>
+  <li><a href="#herramientas">Herramientas</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+
 
   <main class="container" role="main">
     <header>
