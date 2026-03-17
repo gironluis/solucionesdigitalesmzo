@@ -17,7 +17,7 @@ try:
     FROM SAAIO_PEDIME 
     WHERE CVE_IMPO = '5776' 
     AND EXTRACT(YEAR FROM FEC_ENTR) = 2026 
-    AND EXTRACT(MONTH FROM FEC_ENTR) = 2 
+    AND EXTRACT(MONTH FROM FEC_ENTR) = 1 
     AND FIR_ELEC <> ''
     ORDER BY NUM_PEDI, FEC_ENTR
     """
@@ -38,12 +38,12 @@ try:
         })
 
     # 4. Crear el archivo JSON
-    with open('pedidos_marzo.json', 'w', encoding='utf-8') as f:
+    with open('busqueda_actual.json', 'w', encoding='utf-8') as f:
         json.dump(datos_web, f, indent=4, ensure_ascii=False)
 
     print(f"--- PROCESO TERMINADO ---")
     print(f"Se encontraron {len(datos_web)} pedimentos con firma.")
-    print(f"Archivo 'pedidos_marzo.json' listo para la web.")
+    print(f"Archivo 'busqueda_actual.json' listo para la web.")
 
     con.close()
 
