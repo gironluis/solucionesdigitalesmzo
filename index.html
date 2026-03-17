@@ -294,14 +294,10 @@ body {
         </div>
       </div>
     </footer>
-  </main>
-  
-
-  
-
-<script>
-// 1. Le decimos que vaya a buscar el archivo que creó Python
-/*fetch('busqueda_actual.json')
+ </main>
+  <script>
+ //1. Le decimos que vaya a buscar el archivo que creó Python
+fetch('busqueda_actual.json')
     .then(response => response.json()) // Lo convierte a formato de lista
     .then(data => {
         const contenedor = document.getElementById('contenedor-pedimentos');
@@ -322,6 +318,7 @@ body {
         });
     })
     .catch(error => console.error('Híjole, no pude leer el JSON:', error));
+
 </script>
 
 </body>
