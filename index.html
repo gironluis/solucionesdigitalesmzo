@@ -1,252 +1,416 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kit de Soluciones Digitales — Descargas</title>
-  <meta name="description" content="Welcome a mi página SOLUCIONES DIGITALES. Descarga software de soporte remoto y herramientas recomendadas." />
+  <meta name="description"
+    content="Welcome a mi página SOLUCIONES DIGITALES. Descarga software de soporte remoto y herramientas recomendadas." />
 
   <style>
+    #contenedor-pedimentos {
+      display: grid;
+      /* Esto crea columnas automáticamente de al menos 300px */
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      /* Espacio entre tarjetas */
+      padding: 20px;
+      justify-content: center;
+    }
 
-#contenedor-pedimentos {
-    display: grid;
-    /* Esto crea columnas automáticamente de al menos 300px */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 20px; /* Espacio entre tarjetas */
-    padding: 20px;
-    justify-content: center;
-}
+    .tarjeta-vidrio {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
 
-.tarjeta-vidrio {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    color: white;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
-}
-
-.tarjeta-vidrio:hover {
-    transform: translateY(-5px); /* Se levanta al pasar el mouse */
-}
-
-
-.menu-navegacion {
-  position:fixed;
-    top:0;
-    width: 130%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    z-index:1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
+    .tarjeta-vidrio:hover {
+      transform: translateY(-5px);
+      /* Se levanta al pasar el mouse */
+    }
 
 
-.logo{
-color:white;
-font-weight: bold;
-font-size: 1em;
-letter-spacing: 1px;
-
-}
-
-.enlaces a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.enlaces a:hover {
-    color: #06b6d4;
-}
-
-/* Fondo de la página para que resalte el vidrio */
-body {
-    padding-top:120px; /* Para que el contenido no quede oculto detrás del menú fijo */
-    background: linear-gradient(135deg, #1e3a8a 0%, #581c87 100%);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.contenedor-vidrio {
-    display: flex;
-    gap: 20px;
-}
-
-.tarjeta-vidrio {
-    position:relative;
-    overflow:hidden;  
-  /* AQUÍ ESTÁ EL TRUCO DEL VIDRIO */
-      background: rgba(255, 255, 255, 0.1); /* Color blanco con mucha transparencia */
-    backdrop-filter: blur(10px);          /* Esto crea el efecto de desenfoque */
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde finito para el reflejo */
-    border-radius: 20px;
-    padding: 30px;
-    width: 250px;
-    color: white;
-    text-align: center;
-    transition: transform 0.3s ease;      /* Para que se mueva suave al pasar el mouse */
-}
-
-/* Este es el 'foco' que seguirá a tu mouse */
-.tarjeta-vidrio::before {
-    content: ''; /* Obligatorio para que aparezca el elemento */
-    position: absolute;
-    /* Estas variables las controla el JavaScript */
-    top: var(--y, -1000px); 
-    left: var(--x, -1000px);
-    width: 350px;
-    height: 350px;
-    /* Aquí definimos que la luz sea un círculo blanco suave */
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
-    transform: translate(-50%, -50%);
-    pointer-events: none; /* Para que puedas hacer clic en el botón sin problemas */
-}
+    .menu-navegacion {
+      position: fixed;
+      top: 0;
+      width: 130%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
 
+    .logo {
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 1px;
 
-/* Efecto cuando pasas el ratón por encima */
-.tarjeta-vidrio:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.15);
-}
+    }
 
-.boton-vidrio :hover {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: rgb(30, 204, 68);
-    color: #eaf7f0;
-    transform:0.3s ease;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 0.9em;
-}
+    .enlaces a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
-    :root{
-      --bg:#0f1724;
-      --card:#0b1220;
-      --accent:#06b6d4;
-      --muted:#94a3b8;
-      --glass: rgba(255,255,255,0.03);
+    .enlaces a:hover {
+      color: #06b6d4;
+    }
+
+    /* Fondo de la página para que resalte el vidrio */
+    body {
+      padding-top: 120px;
+      /* Para que el contenido no quede oculto detrás del menú fijo */
+      background: linear-gradient(135deg, #1e3a8a 0%, #581c87 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .contenedor-vidrio {
+      display: flex;
+      gap: 20px;
+    }
+
+    .tarjeta-vidrio {
+      position: relative;
+      overflow: hidden;
+      /* AQUÍ ESTÁ EL TRUCO DEL VIDRIO */
+      background: rgba(255, 255, 255, 0.1);
+      /* Color blanco con mucha transparencia */
+      backdrop-filter: blur(10px);
+      /* Esto crea el efecto de desenfoque */
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      /* Borde finito para el reflejo */
+      border-radius: 20px;
+      padding: 30px;
+      width: 250px;
+      color: white;
+      text-align: center;
+      transition: transform 0.3s ease;
+      /* Para que se mueva suave al pasar el mouse */
+    }
+
+    /* Este es el 'foco' que seguirá a tu mouse */
+    .tarjeta-vidrio::before {
+      content: '';
+      /* Obligatorio para que aparezca el elemento */
+      position: absolute;
+      /* Estas variables las controla el JavaScript */
+      top: var(--y, -1000px);
+      left: var(--x, -1000px);
+      width: 350px;
+      height: 350px;
+      /* Aquí definimos que la luz sea un círculo blanco suave */
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      /* Para que puedas hacer clic en el botón sin problemas */
+    }
+
+
+
+    /* Efecto cuando pasas el ratón por encima */
+    .tarjeta-vidrio:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .boton-vidrio :hover {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: rgb(30, 204, 68);
+      color: #eaf7f0;
+      transform: 0.3s ease;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #06b6d4;
+      --muted: #94a3b8;
+      --glass: rgba(255, 255, 255, 0.03);
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#071029 0%, #081428 60%);
-      color:#5dc20b;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
+
+    * {
+      box-sizing: border-box
     }
-    .container{max-width:980px;margin:36px auto;padding:20px;}
-    header{display:flex;align-items:center;gap:16px}
-    .logo{
-      width:76px;height:76px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent),#7c3aed);
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:#042028;
-      box-shadow:0 6px 20px rgba(2,6,23,0.6);font-size:18px;
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #071029 0%, #081428 60%);
+      color: #5dc20b;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.45;
     }
-    h1{margin:0;font-size:1.6rem}
-    p.lead{color:var(--muted);margin:8px 0 20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    .card{
-      background:linear-gradient(180deg,var(--card), rgba(8,14,24,0.75));
-      border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.03);
-      box-shadow: 0 8px 24px rgba(3,6,16,0.6);
+
+    .container {
+      max-width: 980px;
+      margin: 36px auto;
+      padding: 20px;
     }
-    .card h3{margin:0 0 6px;font-size:1.05rem}
-    .card p{margin:0 0 12px;color:var(--muted);font-size:0.95rem}
-    .btn{
-      display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border-radius:10px;
-      background:linear-gradient(90deg,var(--accent),#7c3aed);
-      color:#022b2f;font-weight:700;border:none;text-decoration:none;cursor:pointer;
-      transition:transform .12s ease, box-shadow .12s ease;
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px
     }
-    .btn:active{transform:translateY(1px)}
-    .small{font-size:0.9rem;color:var(--muted)}
-    footer{margin-top:26px;padding:16px;border-radius:12px;background:var(--glass);color:var(--muted)}
-    .meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    @media (max-width:520px){
-      header{flex-direction:column;align-items:flex-start}
-      .logo{width:60px;height:60px}
+
+    .logo {
+      width: 76px;
+      height: 76px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #042028;
+      box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6);
+      font-size: 18px;
     }
+
+    h1 {
+      margin: 0;
+      font-size: 1.6rem
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin: 8px 0 20px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--card), rgba(8, 14, 24, 0.75));
+      border-radius: 12px;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      box-shadow: 0 8px 24px rgba(3, 6, 16, 0.6);
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1.05rem
+    }
+
+    .card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem
+    }
+
+    .btn {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, var(--accent), #7c3aed);
+      color: #022b2f;
+      font-weight: 700;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+
+    .btn:active {
+      transform: translateY(1px)
+    }
+
+    .small {
+      font-size: 0.9rem;
+      color: var(--muted)
+    }
+
+    footer {
+      margin-top: 26px;
+      padding: 16px;
+      border-radius: 12px;
+      background: var(--glass);
+      color: var(--muted)
+    }
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center
+    }
+
+    @media (max-width:520px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start
+      }
+
+      .logo {
+        width: 60px;
+        height: 60px
+      }
+    }
+
     /* accessibility focus */
-    a.btn:focus { outline:3px solid rgba(6,182,212,0.18); box-shadow:0 8px 16px rgba(6,182,212,0.12); }
+    a.btn:focus {
+      outline: 3px solid rgba(6, 182, 212, 0.18);
+      box-shadow: 0 8px 16px rgba(6, 182, 212, 0.12);
+    }
+
+    /* --- ESTO SOLO AFECTA AL BANNER DEL MENÚ --- */
+    .ticker-wrap-menu {
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+      /* Fondo negro */
+      height: 30px;
+    }
+
+    /* El motor del movimiento */
+    .ticker {
+      display: inline-flex !important;
+      width: max-content !important;
+      animation: desplazar-banner 06s linear infinite !important;
+      desplazar-banner 12s linear infinite !important;
+    }
+
+    /* El estilo de las letras */
+    .ticker__item {
+      display: inline-block;
+      padding: 0 50px;
+      color: #00d4ff;
+      /* Azul neón */
+      line-height: 30px;
+      white-space: nowrap;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    /* Las instrucciones del movimiento (Keyframes) */
+    @keyframes desplazar-banner {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
   </style>
+
 </head>
 
 
 <body>
 
-<script>
+
+  <script>
     document.querySelectorAll('.tarjeta-vidrio').forEach(tarjeta => {
-        tarjeta.onmousemove = (e) => {
-            const x = e.pageX - tarjeta.offsetLeft;
-            const y = e.pageY - tarjeta.offsetTop;
-            tarjeta.style.setProperty('--x', x + 'px');
-            tarjeta.style.setProperty('--y', y + 'px');
-        };
+      tarjeta.onmousemove = (e) => {
+        const x = e.pageX - tarjeta.offsetLeft;
+        const y = e.pageY - tarjeta.offsetTop;
+        tarjeta.style.setProperty('--x', x + 'px');
+        tarjeta.style.setProperty('--y', y + 'px');
+      };
     });
-</script>
+  </script>
 
 
-<nav class="menu-navegacion">
-<div class="logo" aria-hidden="true">LAGP</div>
-<ul class="enlaces">
-  <li><a href="#Servicios">Servicios</a></li>
-  <li><a href="#Herramientas">Herramientas</a></li>
-  <li><a href="#Contacto">Contacto</a></li>
-</ul>
-</nav>
+  <nav class="menu-navegacion">
+    <div class="logo" aria-hidden="true">LAGP</div>
+
+    <div class="ticker-wrap-menu">
+      <div class="ticker">
+        <div class="ticker__item">🚢 Aduana: Operación Normal</div>
+        <div class="ticker__item">💵 USD/MXN: $18.45</div>
+        <div class="ticker__item">📦 Logística: Despejado</div>
+        <div class="ticker__item">🚢 Aduana: Operación Normal</div>
+        <div class="ticker__item">💵 USD/MXN: $18.45</div>
+      </div>
+      <div class="ticker">
+        <div class="ticker__item">🚢 Aduana: Operación Normal</div>
+        <div class="ticker__item">💵 USD/MXN: $18.45</div>
+        <div class="ticker__item">📦 Logística: Despejado</div>
+        <div class="ticker__item">🚢 Aduana: Operación Normal</div>
+        <div class="ticker__item">💵 USD/MXN: $18.45</div>
+      </div>
+    </div>
+    <ul class="enlaces">
+      <li><a href="#Servicios">Servicios</a></li>
+      <li><a href="#Herramientas">Herramientas</a></li>
+      <li><a href="#Contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+
+
 
   <main class="container" role="main">
     <header>
       <div class="logo" aria-hidden="true">Kit</div>
       <div>
         <h1>Bienvenidos a mi página para soluciones digitales</h1>
-        <p class="lead">Descarga las herramientas recomendadas para soporte remoto y automatización. Selecciona la que necesites y sigue las instrucciones del fabricante.</p>
+        <p class="lead">Descarga las herramientas recomendadas para soporte remoto y automatización. Selecciona la que
+          necesites y sigue las instrucciones del fabricante.</p>
       </div>
     </header>
 
-<div id="contenedor-pedimentos" class="contenedor-vidrio">
+    <div id="contenedor-pedimentos" class="contenedor-vidrio">
 
-</div>
+    </div>
 
 
-  <div class="contenedor-vidrio">
-    <div class="tarjeta-vidrio">
+    <div class="contenedor-vidrio">
+      <div class="tarjeta-vidrio">
         <h3>Desarrollo de Software</h3>
         <p>Creamos soluciones a medida con las últimas tecnologías del mercado.</p>
-        <a href="https://wa.me/5213141166919?text=Hola%20,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios" class="boton-vidrio" target="_blank">Contactar por WhatsApp</a>
-    </div>
+        <a href="https://wa.me/5213141166919?text=Hola%20,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios"
+          class="boton-vidrio" target="_blank">Contactar por WhatsApp</a>
+      </div>
 
-    <div class="tarjeta-vidrio">
+      <div class="tarjeta-vidrio">
         <h3>Bases de Datos</h3>
         <p>Optimización y limpieza de Firebird para un rendimiento máximo.</p>
-        <a href="https://wa.me/5213141166919?text=Hola%20,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios" class="boton-vidrio" target="_blank">Contactar por WhatsApp</a>
+        <a href="https://wa.me/5213141166919?text=Hola%20,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios"
+          class="boton-vidrio" target="_blank">Contactar por WhatsApp</a>
+      </div>
     </div>
-</div>
 
     <section aria-labelledby="herramientas" style="margin-top:18px;">
       <h2 id="herramientas" style="font-size:1.15rem;margin:0 0 12px">Herramientas</h2>
@@ -255,8 +419,10 @@ body {
         <!-- TeamViewer -->
         <article class="card" role="listitem" aria-labelledby="tv-title">
           <h3 id="tv-title">TeamViewer</h3>
-          <p>Software para control remoto, soporte y reuniones en línea. Gratis para uso personal. Sigue las instrucciones oficiales en su página de descarga.</p>
-          <a class="btn" href="https://www.teamviewer.com/en-us/download/windows/" target="_blank" rel="noopener noreferrer">
+          <p>Software para control remoto, soporte y reuniones en línea. Gratis para uso personal. Sigue las
+            instrucciones oficiales en su página de descarga.</p>
+          <a class="btn" href="https://www.teamviewer.com/en-us/download/windows/" target="_blank"
+            rel="noopener noreferrer">
             Descargar TeamViewer
           </a>
           <div style="margin-top:10px" class="small">Plataformas: Windows, macOS, Linux, iOS, Android</div>
@@ -275,51 +441,54 @@ body {
         <!-- RustDesk -->
         <article class="card" role="listitem" aria-labelledby="rd-title">
           <h3 id="rd-title">RustDesk</h3>
-          <p>Alternativa open-source a TeamViewer/AnyDesk, con opción de autoalojar el servidor para mayor control de datos.</p>
+          <p>Alternativa open-source a TeamViewer/AnyDesk, con opción de autoalojar el servidor para mayor control de
+            datos.</p>
           <a class="btn" href="https://rustdesk.com/" target="_blank" rel="noopener noreferrer">
             Ir a RustDesk (Descargas)
           </a>
           <div style="margin-top:10px" class="small">Open-source — ideal si buscas self-hosting.</div>
         </article>
 
-        
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>
-          <strong>Aviso:</strong>
-          <span class="small">Descarga siempre desde los enlaces oficiales. No distribuyas versiones no oficiales o modificadas. Lee las condiciones y requisitos del sistema antes de instalar.</span>
-        </div>
-        <div class="meta">
-          <span class="small">Página Desarrollada por Luis Giron Plazola by Soluciones digitales 2026</span>
-        </div>
-      </div>
-    </footer>
- </main>
+
+        <footer>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+            <div>
+              <strong>Aviso:</strong>
+              <span class="small">Descarga siempre desde los enlaces oficiales. No distribuyas versiones no oficiales o
+                modificadas. Lee las condiciones y requisitos del sistema antes de instalar.</span>
+            </div>
+            <div class="meta">
+              <span class="small">Página Desarrollada por Luis Giron Plazola by Soluciones digitales 2026</span>
+            </div>
+          </div>
+        </footer>
+  </main>
   <script>
- //1. Le decimos que vaya a buscar el archivo que creó Python
-fetch('busqueda_actual.json')
-    .then(response => response.json()) // Lo convierte a formato de lista
-    .then(data => {
-        const contenedor = document.getElementById('contenedor-pedimentos');
-        contenedor.innerHTML = ''; // Limpiamos por si acaso
+    //1. Le decimos que vaya a buscar el archivo que creó Python
+    // fetch('busqueda_actual.json')
+    //   .then(response => response.json()) // Lo convierte a formato de lista
+    //   .then(data => {
+    //     const contenedor = document.getElementById('contenedor-pedimentos');
+    //     contenedor.innerHTML = ''; // Limpiamos por si acaso
 
-        // 2. Por cada uno de los 22 pedimentos, creamos una tarjeta
-        data.forEach(pedido => {
-            contenedor.innerHTML += `
-                <div class="tarjeta-vidrio">
-                    <div class="badge">PEDIMENTO</div>
-                    <h3>${pedido.pedimento}</h3>
-                    <p><strong>Referencia:</strong> ${pedido.referencia}</p>
-                    <p><strong>Tipo:</strong> ${pedido.tipo}</p>
-                    <p><strong>Total:</strong> $${pedido.total_efectivo.toLocaleString()}</p>
-                    <a href="#" class="boton-vidrio">Ver Detalles</a>
-                </div>
-            `;
-        });
-    })
-    .catch(error => console.error('Híjole, no pude leer el JSON:', error));
+    //     // 2. Por cada uno de los 22 pedimentos, creamos una tarjeta
+    //     data.forEach(pedido => {
+    //       contenedor.innerHTML += `
+    //             <div class="tarjeta-vidrio">
+    //                 <div class="badge">PEDIMENTO</div>
+    //                 <h3>${pedido.pedimento}</h3>
+    //                 <p><strong>Referencia:</strong> ${pedido.referencia}</p>
+    //                 <p><strong>Tipo:</strong> ${pedido.tipo}</p>
+    //                 <p><strong>Total:</strong> $${pedido.total_efectivo.toLocaleString()}</p>
+    //                 <a href="#" class="boton-vidrio">Ver Detalles</a>
+    //             </div>
+    //         `;
+    //     });
+    //   })
+    //   .catch(error => console.error('Híjole, no pude leer el JSON:', error));
 
-</script>
+  </script>
 
 </body>
+
 </html>
